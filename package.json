@@ -1,6 +1,6 @@
 {
   "name": "date-range-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module that generates date ranges between two dates with specified intervals (daily, weekly, monthly).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
