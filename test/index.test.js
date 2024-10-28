@@ -36,12 +36,12 @@ describe('generateDateRange', () => {
   test('should throw an error for invalid date format', () => {
     expect(() => {
       generateDateRange('invalid-date', '2023-01-05', 'daily');
-    }).toThrow('Geçersiz tarih formatı. Lütfen YYYY-MM-DD formatını kullanın.');
+    }).toThrow('Invalid date format. Please use YYYY-MM-DD.');
   });
 
   test('should throw an error if start date is after end date', () => {
     expect(() => {
       generateDateRange('2023-01-10', '2023-01-05', 'daily');
-    }).toThrow('Başlangıç tarihi bitiş tarihinden büyük olamaz.');
+    }).toThrow('Start date cannot be after end date.');
   });
 });
